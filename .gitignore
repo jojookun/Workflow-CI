@@ -4,6 +4,7 @@ __pycache__/
 mlruns/
 MLProject/mlruns/
 MLProject/outputs/
+MLProject/outputs-*/
 *.log
 *.tar.gz
 .env
