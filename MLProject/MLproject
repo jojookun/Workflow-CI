@@ -1,0 +1,8 @@
+name: Bank-Marketing-Retraining
+conda_env: conda.yaml
+entry_points:
+  main:
+    parameters:
+      data_dir: {type: string, default: bank_marketing_preprocessing}
+      output_dir: {type: string, default: outputs}
+    command: "python modelling.py --data-dir {data_dir} --output-dir {output_dir}"
