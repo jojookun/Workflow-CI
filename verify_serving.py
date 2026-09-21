@@ -18,7 +18,7 @@ def main():
             with urlopen(f"{args.url}/ping", timeout=3) as response:
                 if response.status == 200:
                     break
-        except (URLError, TimeoutError):
+        except (URLError, TimeoutError, ConnectionError):
             pass
         time.sleep(2)
     else:
